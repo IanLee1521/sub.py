@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-import urllib2, sys
+
+import sys
+import urllib2
+
 from bs4 import BeautifulSoup as bs4
 
 # HTTP-proxies (if response == 403):
