@@ -18,8 +18,8 @@ sou = bs4(res, 'html.parser')
 fin = []
 
 for sdn in sou.findAll('a', {'target' : '_blank'}):
-	if dmn in sdn.text:
-		fin.append(sdn.text.strip())
+    if dmn in sdn.text:
+        fin.append(sdn.text.strip())
 
 for sdn in fin:
-	print(sdn)
+    print(sdn)
