@@ -12,7 +12,8 @@ dmn = sys.argv[1]
 prx = urllib2.ProxyHandler({'http': 'http://46.166.129.226:80'})
 opn = urllib2.build_opener(prx)
 urllib2.install_opener(opn)
-req = urllib2.urlopen('https://www.virustotal.com/en/domain/' + dmn + '/information')
+url = 'https://www.virustotal.com/en/domain/' + dmn + '/information'
+req = urllib2.urlopen(url)
 res = req.read()
 sou = bs4(res, 'html.parser')
 fin = []
